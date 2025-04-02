@@ -1,5 +1,5 @@
 function [H_sel] = AS_SEL(H,N,G,K,P_max,sigma_2)
-for n=1:N
+for n=1:G
     ini_a(n)=H(n,:)*H(n,:)';
 end
 [~,indm_ini]=max(abs(ini_a));
